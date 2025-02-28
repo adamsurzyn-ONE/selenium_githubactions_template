@@ -37,6 +37,4 @@ jobs:
           git pull --rebase origin main 
           git add Rotterdam_schedule.xlsx
           git commit -m "Automatyczna aktualizacja danych Rotterdam_schedule.xlsx" || echo "Brak zmian do zapisania"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Karolik-Aleksandra-one/schedule.git main
