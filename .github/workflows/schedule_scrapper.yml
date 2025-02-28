@@ -42,6 +42,6 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git pull --rebase origin main 
-          git add Rotterdam_schedule.xlsx
+          git add Rotterdam_schedule.csv
           git commit -m "Automatyczna aktualizacja danych Rotterdam_schedule.xlsx" || echo "Brak zmian do zapisania"
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Karolik-Aleksandra-one/schedule.git main
