@@ -68,8 +68,8 @@ df = pd.DataFrame(data, columns=headers)
 driver.quit()
 
 # Zapis do pliku Excel
-file_path = "Rotterdam_schedule.xlsx"
-df.to_excel(file_path, index=False)
+file_path = "Rotterdam_schedule.csv"
+df.to_excel(file_path, index=False, encoding = 'utf-8')
 
 
 
