@@ -41,8 +41,8 @@ filter_button = driver.find_element (By.XPATH, "/html/body/div[3]/div[2]/div/tab
 filter_button.click()
 
 #znajdujemy rail i barge
-checkbox_1 = driver.find_element(By.CSS_SELECTOR,"body > div.modalFilter > div.modal-content > div:nth-child(3) > label")
-checkbox_2 = driver.find_element(By.CSS_SELECTOR,"body > div.modalFilter > div.modal-content > div:nth-child(5) > label")
+checkbox_1 = driver.find_element(By.XPATH, "//label[contains(text(), 'BARGE')]")
+checkbox_2 = driver.find_element(By.XPATH, "//label[contains(text(), 'RAIL')]")
 
 
 # Kliknięcie checkboxów
