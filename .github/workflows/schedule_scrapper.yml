@@ -2,7 +2,7 @@ name: Run Selenium Scraper
 
 on:
   schedule:
-    - cron: "0 6,18 * * *"  # Uruchamia się codziennie o 6:00 i 18:00 UTC
+    - cron: "0 6,18 * * *"  # Uruchamia się codziennie o 6:00 i 18:00 UTC 
   workflow_dispatch:  # Pozwala uruchomić ręcznie z poziomu GitHub Actions
 
 jobs:
