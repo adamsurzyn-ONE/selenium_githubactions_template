@@ -26,7 +26,8 @@ driver.get("https://rwgservices.rwg.nl/Modality/VesselArrivalTimes")
 
 time.sleep(10)
 # show - do wybrania 100 wierszy
-select_element = driver.find_element(By.XPATH,"/html/body/div[3]/div[2]/div/div[1]/div[1]/label/select")
+#select_element = driver.find_element(By.XPATH,"/html/body/div[3]/div[2]/div/div[1]/div[1]/label/select")
+select_element = driver.find_element(By.CSS_SELECTOR,'#list_length > label > select')
 select = Select(select_element)
 
 sto = driver.find_element(By.CSS_SELECTOR, "#list_length > label > select > option:nth-child(4)")
