@@ -77,5 +77,5 @@ file_path = "Rotterdam_schedule.csv"
 df.to_csv(file_path, index=False, encoding = 'utf-8')
 
 # Zakończenie działania wirtualnego wyświetlacza
-display.stop(
+display.stop()
 
