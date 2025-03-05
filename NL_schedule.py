@@ -5,6 +5,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
+# Start wirtualnego wyświetlacza
+display = Display(visible=0, size=(800, 800))
+display.start()
+
 def web_driver():
     options = webdriver.ChromeOptions()
     options.add_argument("--verbose")
@@ -72,5 +76,6 @@ driver.quit()
 file_path = "Rotterdam_schedule.csv"
 df.to_csv(file_path, index=False, encoding = 'utf-8')
 
-
+# Zakończenie działania wirtualnego wyświetlacza
+display.stop(
 
