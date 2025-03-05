@@ -4,6 +4,7 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+from pyvirtualdisplay import Display
 
 # Start wirtualnego wyświetlacza
 display = Display(visible=0, size=(800, 800))
